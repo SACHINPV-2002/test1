@@ -1,4 +1,4 @@
-# Temperature State Tracker
+# Temperature Based State Tracker
 
 This project simulates a temperature-based control system using Wokwi and Visual Studio Code with PlatformIO.
 
@@ -62,6 +62,44 @@ The system tracks temperature and transitions between 5 states based on preset t
 
 
 If the sensor fails to read, the system resets to **Idle** and turns everything off.
+
+## OUTPUTS
+CASE 1: HEATING
+
+https://github.com/user-attachments/assets/35f23b9d-5c7c-4e6f-807e-68bee2f478ae
+
+- The LED is ON which indicates that the Heater is currently turned on.
+
+CASE 2: STABILIZING
+
+https://github.com/user-attachments/assets/26c64ba9-16de-4513-bbfb-e4402e8d64cb
+
+- Current temperature is 29.40 degree Celsius; Therefore, the system starts stabilizing (29°C ≤ Temp < 30°C). 
+- The LED is blinking slowly to indicate the state
+
+CASE 3: TARGET REACHED
+
+https://github.com/user-attachments/assets/2bdef6af-5cc6-46fc-8be4-cc54b1d49403
+
+- Current temperature is 30.40 degree Celsius; Therefore, the target temperature has been reached.
+- The LED is off indicating that the heater is turned off.
+
+CASE 4: OVERHEATING
+
+https://github.com/user-attachments/assets/0969fe70-73b1-4785-9898-7fa16861e271
+
+- Temperature recorded is 46.50 degree Celsius; Therefore, the system is in overheating state.
+- This is indicated by the rapidly blinking LED and the Buzzer Beep.
+
+CASE 5: IDLE
+
+https://github.com/user-attachments/assets/4e7e5ec2-49b3-4d37-a1ca-034046b8db0b
+
+- Temperature recorded is 36.30 degree Celsius; Therefore, the system is in idle state.
+
+
+
+
 
 
 
